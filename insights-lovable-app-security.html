@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Is your Lovable app secure? A plain English checklist | Brolgo</title>
+<meta name="description" content="A practical security checklist for apps built with Lovable and Supabase, written for founders, not engineers.">
+<meta property="og:title" content="Is your Lovable app secure? A plain English checklist | Brolgo">
+<meta property="og:description" content="A practical security checklist for apps built with Lovable and Supabase, written for founders, not engineers.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://brolgo.com.au/insights-lovable-app-security.html">
+<meta property="og:url" content="https://brolgo.com.au/insights-lovable-app-security.html">
+<meta property="og:site_name" content="Brolgo">
+<meta property="og:locale" content="en_AU">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Is your Lovable app secure? A plain English checklist", "description": "A practical security checklist for apps built with Lovable and Supabase, written for founders, not engineers.", "url": "https://brolgo.com.au/insights-lovable-app-security.html", "datePublished": "2026-11-03", "dateModified": "2026-11-03", "inLanguage": "en-AU", "author": {"@type": "Person", "name": "Taimoor Ahmed", "url": "https://brolgo.com.au/about.html"}, "publisher": {"@type": "Organization", "name": "Brolgo", "logo": {"@type": "ImageObject", "url": "https://brolgo.com.au/apple-touch-icon.png"}}, "mainEntityOfPage": "https://brolgo.com.au/insights-lovable-app-security.html"}</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Brolgo home">
+      <svg class="b-mark" viewBox="28 3 58 87" aria-hidden="true">
+        <circle class="head" cx="36" cy="13" r="8.5"></circle>
+        <rect x="30" y="27" width="12" height="63" rx="6" fill="currentColor"></rect>
+        <circle cx="60" cy="66" r="18" fill="none" stroke="currentColor" stroke-width="12"></circle>
+      </svg><span>rolgo</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="siteNav" aria-label="Main">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="work.html">Our work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="insights.html" aria-current="page">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn" href="contact.html">Talk to us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Launching an AI built app</p>
+      <h1>Is your Lovable app secure? A plain English checklist</h1>
+      <p class="meta">By Taimoor Ahmed · 5 min read</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <article class="article">
+<p>Lovable makes it remarkably easy to build an app with user accounts and a database. That's also why security problems slip through. The app looks finished and works in the demo, but the data behind it may be open to anyone who knows where to look.</p>
+<p>Most Lovable apps use Supabase for the database and logins. Here's a plain English checklist to work through before you put real customers or real data on it.</p>
+<h2>1. Turn on row level security for every table</h2>
+<p>Row level security (RLS) is the rule that decides who can see which rows in your database. Without it, any logged in user, and sometimes anyone at all, can read every record. Open Supabase, check every table, and make sure RLS is on with a policy that only lets people see their own data.</p>
+<p><strong>Quick test:</strong> create two test accounts. Log in as one and try to view or edit the other's records. If you can, so can your customers.</p>
+<h2>2. Know which key is which</h2>
+<p>Supabase gives you a public key and a secret service key. The public key is meant to be in the browser and is only safe when RLS is set up properly. The <strong>service key must never appear in your front end code</strong>, because it skips every security rule. Search your project for it.</p>
+<h2>3. Keep other secrets on the server</h2>
+<p>Keys for OpenAI, Stripe, email services and similar should live in server side functions, not in the code that runs in the browser. If a prompt asked the AI to "just call the API", check where it put the key.</p>
+<h2>4. Check every page and action, not just the login screen</h2>
+<p>Hiding an admin button doesn't stop someone calling the action behind it. Make sure the database rules and server functions check who the user is and what role they have, every time.</p>
+<h2>5. Lock down file storage</h2>
+<p>If users upload documents or photos, check your storage buckets. Public buckets mean anyone with the link can see the file. Anything personal, like IDs, invoices or medical documents, should be private.</p>
+<h2>6. Tighten up sign up and passwords</h2>
+<p>Turn on email confirmation, set sensible password rules and decide who is actually allowed to sign up. If it's an internal tool, don't leave public sign up open.</p>
+<h2>7. Limit abuse</h2>
+<p>Forms and AI features can be hammered by bots, which can run up big bills. Add rate limits or a simple bot check on public forms and anything that calls a paid API.</p>
+<h2>8. Back it up and watch it</h2>
+<p>Set up regular backups and test a restore. Add error tracking so you know when something breaks. If you handle personal information, remember Australian privacy law expects you to protect it and to act if there's a breach.</p>
+<h2>Not sure where you stand?</h2>
+<p>Working through this list yourself is a great start. If you'd rather have someone check it properly, our <a href="services.html#review-offer">$990 app production review</a> covers all of this plus hosting, performance and code quality, with a written report ranked by risk. Also see <a href="insights-launch-checklist.html">7 things to fix before you launch</a>.</p>
+        <a class="back" href="insights.html">← All insights</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap row">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">Let's talk</p>
+        <h2>Want a second pair of eyes?</h2>
+        <p>Tell us what you're working on and we'll give you an honest view.</p>
+      </div>
+      <a class="btn" href="contact.html">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="about">
+      <a class="brand" href="index.html" aria-label="Brolgo home">
+      <svg class="b-mark" viewBox="28 3 58 87" aria-hidden="true">
+        <circle class="head" cx="36" cy="13" r="8.5"></circle>
+        <rect x="30" y="27" width="12" height="63" rx="6" fill="currentColor"></rect>
+        <circle cx="60" cy="66" r="18" fill="none" stroke="currentColor" stroke-width="12"></circle>
+      </svg><span>rolgo</span>
+      </a>
+      <p>Software and AI automation for Australian businesses. We take vibe coded apps to production, build custom software and automate the busywork.</p>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="services.html#vibe">Vibe coded apps to production</a></li>
+        <li><a href="services.html#custom">Custom software</a></li>
+        <li><a href="services.html#automation">AI automation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="work.html">Our work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.linkedin.com/company/brolgo" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Brolgo</span>
+      <span><a href="mailto:info@brolgo.com.au">info@brolgo.com.au</a> · <a href="tel:+61492829450">0492 829 450</a> · Brisbane, Australia</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

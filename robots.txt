@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brolgo.com.au/sitemap.xml
