@@ -60,18 +60,18 @@
   <section>
     <div class="wrap">
       <article class="article">
-<p>AI tools like Lovable, Bolt, Cursor and Replit have made it possible to build a working app in a weekend. That's genuinely exciting. But most of the apps we review have the same handful of problems hiding under a nice looking interface. None of them show up in a demo. All of them show up once real customers arrive.</p>
+<p>AI tools like <a href="https://lovable.dev" target="_blank" rel="noopener">Lovable</a>, <a href="https://bolt.new" target="_blank" rel="noopener">Bolt</a>, <a href="https://cursor.com" target="_blank" rel="noopener">Cursor</a> and <a href="https://replit.com" target="_blank" rel="noopener">Replit</a> have made it possible to build a working app in a weekend. That's genuinely exciting. But most of the apps we review have the same handful of problems hiding under a nice looking interface. None of them show up in a demo. All of them show up once real customers arrive.</p>
 <p>Here are the seven we see most, and what to do about each one.</p>
 <h2>1. Secret keys sitting in the browser</h2>
 <p>AI tools often put API keys straight into the front end so things work quickly. Anyone who opens the browser tools can copy them and run up your bill or read your data. <strong>Move every secret key to the server</strong> and call it from there.</p>
 <h2>2. Anyone can read anyone's data</h2>
-<p>If you use Supabase or Firebase, check your database rules. A surprising number of apps let any logged in user read every other user's records. Turn on row level security and test it with two accounts.</p>
+<p>If you use <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> or <a href="https://firebase.google.com" target="_blank" rel="noopener">Firebase</a>, check your database rules. A surprising number of apps let any logged in user read every other user's records. Turn on <a href="https://supabase.com/docs/guides/database/postgres/row-level-security" target="_blank" rel="noopener">row level security</a> and test it with two accounts.</p>
 <h2>3. Logins that are easy to get around</h2>
 <p>Check that every page and every API call actually checks who the user is, not just the ones with a login screen in front of them. Hiding a button is not the same as blocking access.</p>
 <h2>4. No backups</h2>
 <p>Ask yourself: if the database was wiped tonight, what would you lose? Set up automatic daily backups and try restoring one before you need it.</p>
 <h2>5. You only find out about errors from customers</h2>
-<p>Add error tracking such as Sentry so you hear about crashes first. It takes an hour to set up and saves a lot of awkward emails.</p>
+<p>Add error tracking such as <a href="https://sentry.io" target="_blank" rel="noopener">Sentry</a> so you hear about crashes first. It takes an hour to set up and saves a lot of awkward emails.</p>
 <h2>6. Hosting on a free preview link</h2>
 <p>Preview links are fine for testing, not for customers. Put the app on your own domain, on hosting you control, with your own accounts. If the builder tool changes its plans tomorrow, your app should keep running.</p>
 <h2>7. Nobody can explain how it works</h2>

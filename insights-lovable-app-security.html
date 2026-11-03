@@ -60,10 +60,10 @@
   <section>
     <div class="wrap">
       <article class="article">
-<p>Lovable makes it remarkably easy to build an app with user accounts and a database. That's also why security problems slip through. The app looks finished and works in the demo, but the data behind it may be open to anyone who knows where to look.</p>
-<p>Most Lovable apps use Supabase for the database and logins. Here's a plain English checklist to work through before you put real customers or real data on it.</p>
+<p><a href="https://lovable.dev" target="_blank" rel="noopener">Lovable</a> makes it remarkably easy to build an app with user accounts and a database. That's also why security problems slip through. The app looks finished and works in the demo, but the data behind it may be open to anyone who knows where to look.</p>
+<p>Most Lovable apps use <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> for the database and logins. Here's a plain English checklist to work through before you put real customers or real data on it.</p>
 <h2>1. Turn on row level security for every table</h2>
-<p>Row level security (RLS) is the rule that decides who can see which rows in your database. Without it, any logged in user, and sometimes anyone at all, can read every record. Open Supabase, check every table, and make sure RLS is on with a policy that only lets people see their own data.</p>
+<p><a href="https://supabase.com/docs/guides/database/postgres/row-level-security" target="_blank" rel="noopener">Row level security (RLS)</a> is the rule that decides who can see which rows in your database. Without it, any logged in user, and sometimes anyone at all, can read every record. Open Supabase, check every table, and make sure RLS is on with a policy that only lets people see their own data.</p>
 <p><strong>Quick test:</strong> create two test accounts. Log in as one and try to view or edit the other's records. If you can, so can your customers.</p>
 <h2>2. Know which key is which</h2>
 <p>Supabase gives you a public key and a secret service key. The public key is meant to be in the browser and is only safe when RLS is set up properly. The <strong>service key must never appear in your front end code</strong>, because it skips every security rule. Search your project for it.</p>
@@ -78,7 +78,7 @@
 <h2>7. Limit abuse</h2>
 <p>Forms and AI features can be hammered by bots, which can run up big bills. Add rate limits or a simple bot check on public forms and anything that calls a paid API.</p>
 <h2>8. Back it up and watch it</h2>
-<p>Set up regular backups and test a restore. Add error tracking so you know when something breaks. If you handle personal information, remember Australian privacy law expects you to protect it and to act if there's a breach.</p>
+<p>Set up regular backups and test a restore. Add error tracking so you know when something breaks. If you handle personal information, remember <a href="https://www.oaic.gov.au/privacy/notifiable-data-breaches/about-the-notifiable-data-breaches-scheme" target="_blank" rel="noopener">Australian privacy law</a> expects you to protect it and to act if there's a breach.</p>
 <h2>Not sure where you stand?</h2>
 <p>Working through this list yourself is a great start. If you'd rather have someone check it properly, our <a href="/services#review-offer">$990 app production review</a> covers all of this plus hosting, performance and code quality, with a written report ranked by risk. Also see <a href="/insights-launch-checklist">7 things to fix before you launch</a>.</p>
         <a class="back" href="/insights">← All insights</a>
