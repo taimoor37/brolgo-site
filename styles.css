@@ -196,3 +196,18 @@ textarea{min-height:150px;resize:vertical}
 section[id]{scroll-margin-top:84px}
 .sec-head .eyebrow,.svc-detail .intro .eyebrow,.side .eyebrow{font-size:13px;color:var(--crest-ink)}
 .band .sec-head .eyebrow{color:var(--crest);opacity:1}
+
+/* our work */
+.client{font-size:16px!important}
+.client b{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);font-weight:500;margin-right:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-family:var(--mono);font-size:12px;padding:5px 10px;border:1px solid var(--line);border-radius:999px;color:var(--ink-soft);background:var(--surface)}
+.work-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.work-cards{grid-template-columns:minmax(0,1fr)}}
+
+/* founder */
+.founder{display:flex;gap:20px;align-items:center}
+.avatar{flex:none;width:84px;height:84px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-weight:800;font-size:28px;letter-spacing:-.02em;position:relative}
+.avatar::after{content:"";position:absolute;top:4px;right:6px;width:16px;height:16px;border-radius:50%;background:var(--crest);border:3px solid var(--paper)}
+.founder h2{font-size:clamp(28px,3.6vw,40px);font-weight:800;letter-spacing:-.03em;margin-top:6px}
+.founder .role{color:var(--ink-soft);font-size:16px;margin-top:6px}
