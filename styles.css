@@ -30,7 +30,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .site-header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid transparent;transition:border-color .2s}
 .site-header.scrolled{border-bottom-color:var(--line)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand{display:inline-flex;align-items:baseline;gap:0;text-decoration:none;line-height:1}
 .brand span{font-size:26px;font-weight:800;letter-spacing:-.04em}
 .brand .head{fill:var(--crest)}
 .nav{display:flex;align-items:center;gap:28px}
@@ -262,3 +262,5 @@ img.avatar{width:120px;height:120px;object-fit:cover;border:3px solid var(--surf
   .who{grid-template-columns:minmax(0,1fr)}
   .offer-price .btn{justify-self:stretch}
 }
+
+.brand .b-mark{width:auto;height:.94em;font-size:26px;flex:none;margin-right:.5px}
