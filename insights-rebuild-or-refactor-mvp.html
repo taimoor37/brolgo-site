@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rebuild or refactor? What to do when your MVP starts to struggle | Brolgo</title>
+<meta name="description" content="How to tell if your MVP needs a full rebuild or just targeted fixes, and how to scale it without stopping the business.">
+<meta property="og:title" content="Rebuild or refactor? What to do when your MVP starts to struggle | Brolgo">
+<meta property="og:description" content="How to tell if your MVP needs a full rebuild or just targeted fixes, and how to scale it without stopping the business.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://brolgo.com.au/insights-rebuild-or-refactor-mvp">
+<meta property="og:url" content="https://brolgo.com.au/insights-rebuild-or-refactor-mvp">
+<meta property="og:site_name" content="Brolgo">
+<meta property="og:locale" content="en_AU">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Rebuild or refactor? What to do when your MVP starts to struggle", "description": "How to tell if your MVP needs a full rebuild or just targeted fixes, and how to scale it without stopping the business.", "url": "https://brolgo.com.au/insights-rebuild-or-refactor-mvp", "datePublished": "2026-11-06", "dateModified": "2026-11-06", "inLanguage": "en-AU", "author": {"@type": "Person", "name": "Taimoor Ahmed", "url": "https://brolgo.com.au/about"}, "publisher": {"@type": "Organization", "name": "Brolgo", "logo": {"@type": "ImageObject", "url": "https://brolgo.com.au/apple-touch-icon.png"}}, "mainEntityOfPage": "https://brolgo.com.au/insights-rebuild-or-refactor-mvp"}</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Brolgo home">
+      <svg class="b-mark" viewBox="28 3 58 87" aria-hidden="true">
+        <circle class="head" cx="36" cy="13" r="8.5"></circle>
+        <rect x="30" y="27" width="12" height="63" rx="6" fill="currentColor"></rect>
+        <circle cx="60" cy="66" r="18" fill="none" stroke="currentColor" stroke-width="12"></circle>
+      </svg><span>rolgo</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="siteNav" aria-label="Main">
+      <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/work">Our work</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/insights" aria-current="page">Insights</a></li>
+          <li><a href="/contact">Contact</a></li>
+      </ul>
+      <a class="btn" href="/contact">Talk to us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Custom software and MVPs</p>
+      <h1>Rebuild or refactor? What to do when your MVP starts to struggle</h1>
+      <p class="meta">By Taimoor Ahmed · 6 min read</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <article class="article">
+<p>Your MVP did its job. People signed up, some of them paid, and now you're getting feature requests faster than you can ship them. Then things start to creak. Pages get slow. Every new feature breaks something old. Your developer sighs every time you ask for a change.</p>
+<p>At this point most founders ask the same question: do we fix what we have, or start again? Here's how we help clients answer it.</p>
+<h2>Signs your MVP is hitting its limits</h2>
+<ul>
+<li><strong>Small changes take far too long.</strong> A simple tweak turns into a week because everything is tangled together.</li>
+<li><strong>Fixing one bug creates two more.</strong> There are no automated tests, so nobody knows what a change will break.</li>
+<li><strong>It slows down as you grow.</strong> Pages that loaded instantly with 50 users now crawl with 2,000.</li>
+<li><strong>You can't add what customers are asking for.</strong> Team accounts, roles, integrations or multiple customers on one platform just don't fit the way it was built.</li>
+<li><strong>Only one person understands it,</strong> or the AI tool that built it, and nobody wants to touch it.</li>
+</ul>
+<p>Seeing two or three of these is normal. It means the MVP worked. It doesn't automatically mean you need to throw it away.</p>
+<h2>When refactoring is the right call</h2>
+<p>Refactoring means improving the code you have, piece by piece, while the product keeps running. It's usually the better choice when:</p>
+<ul>
+<li>The tech stack is sensible and well supported, even if the code is messy.</li>
+<li>The problems sit in a few specific areas, like one slow page or one fragile feature.</li>
+<li>The database structure mostly makes sense for where the product is heading.</li>
+<li>You need to keep shipping features while things get better.</li>
+</ul>
+<p>Most AI built apps from tools like Lovable or Bolt fall into this group. The foundations are often fine. What's missing is structure, tests, security and proper hosting.</p>
+<h2>When a rebuild makes more sense</h2>
+<p>A rebuild means writing a new version alongside the old one, then moving customers across. It's worth considering when:</p>
+<ul>
+<li>The product has fundamentally changed since the MVP, for example from a single business tool to a multi customer SaaS platform.</li>
+<li>It's built on a no code or low code platform you've outgrown, with limits you can't work around.</li>
+<li>The database design blocks the features your customers need most.</li>
+<li>Security or compliance problems run through the whole app, not just a few places.</li>
+</ul>
+<p>Rebuilds take longer and cost more, so be honest about whether the problem is the code or simply the backlog.</p>
+<h2>The middle path most teams should take</h2>
+<p>In practice, the best answer is usually a bit of both. Keep the product running, then replace the weakest parts one at a time. Start with whatever hurts most, often the database, logins and permissions, or the slowest screens. Add tests around each part as you go, so it stays fixed.</p>
+<p>This way you never have a six month freeze where customers see nothing new, and every step makes the product easier to grow.</p>
+<h2>Before you decide, get a proper look</h2>
+<p>The worst decisions get made on gut feel. A short review of the code, database, hosting and the features on your roadmap will tell you clearly where the real problems are and what each option would cost.</p>
+<p>If your MVP was built with an AI tool, our <a href="/services#review-offer">$990 production review</a> covers exactly this. For larger products, <a href="/contact?service=custom">tell us about your MVP</a> and we'll give you an honest view on whether to refactor, rebuild or leave it alone. You can also read how we approach <a href="/services#custom">custom software and MVP scaling</a>.</p>
+        <a class="back" href="/insights">← All insights</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap row">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">Let's talk</p>
+        <h2>Want a second pair of eyes?</h2>
+        <p>Tell us what you're working on and we'll give you an honest view.</p>
+      </div>
+      <a class="btn" href="/contact">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="about">
+      <a class="brand" href="/" aria-label="Brolgo home">
+      <svg class="b-mark" viewBox="28 3 58 87" aria-hidden="true">
+        <circle class="head" cx="36" cy="13" r="8.5"></circle>
+        <rect x="30" y="27" width="12" height="63" rx="6" fill="currentColor"></rect>
+        <circle cx="60" cy="66" r="18" fill="none" stroke="currentColor" stroke-width="12"></circle>
+      </svg><span>rolgo</span>
+      </a>
+      <p>Custom software for Australian businesses. We take vibe coded apps and MVPs to production, build software from scratch and help it scale.</p>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="/services#vibe">Vibe coded apps to production</a></li>
+        <li><a href="/services#custom">Custom software and MVPs</a></li>
+        <li><a href="/services#automation">AI automation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="/work">Our work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://www.linkedin.com/company/brolgo" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Brolgo</span>
+      <span><a href="mailto:info@brolgo.com.au">info@brolgo.com.au</a> · <a href="tel:+61492829450">0492 829 450</a> · Brisbane, Australia</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
