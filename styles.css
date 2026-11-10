@@ -264,3 +264,10 @@ img.avatar{width:120px;height:120px;object-fit:cover;border:3px solid var(--surf
 }
 
 .brand .b-mark{width:auto;height:.94em;font-size:26px;flex:none;margin-right:.5px}
+
+/* article call to action box */
+.article .cta-box{margin:32px 0;padding:24px 26px;border-radius:18px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--crest)}
+.article .cta-box p{margin:0 0 14px;color:var(--ink);font-size:18px}
+.article .cta-box p:last-child{margin-bottom:0}
+.article .cta-box .btn{display:inline-block;text-decoration:none}
+.article .faq h3{font-size:19px;font-weight:800;color:var(--ink);margin:22px 0 8px;letter-spacing:-.01em}
