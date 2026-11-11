@@ -271,3 +271,12 @@ img.avatar{width:120px;height:120px;object-fit:cover;border:3px solid var(--surf
 .article .cta-box p:last-child{margin-bottom:0}
 .article .cta-box .btn{display:inline-block;text-decoration:none}
 .article .faq h3{font-size:19px;font-weight:800;color:var(--ink);margin:22px 0 8px;letter-spacing:-.01em}
+
+/* leadership */
+.leaders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.leader{display:flex;flex-direction:column;gap:16px;padding:32px;border-radius:22px;background:var(--surface);border:1px solid var(--line);min-width:0}
+.leader h3{font-size:clamp(26px,3vw,34px);font-weight:800;letter-spacing:-.03em;margin-top:6px}
+.leader>p{color:var(--ink-soft);font-size:17px;line-height:1.65}
+.leader .li-link{margin-top:auto;font-weight:700;font-size:15px;text-underline-offset:4px;text-decoration-color:var(--crest)}
+.leader img.avatar{width:96px;height:96px}
+@media (max-width:900px){.leaders{grid-template-columns:minmax(0,1fr)}.leader{padding:24px}}
