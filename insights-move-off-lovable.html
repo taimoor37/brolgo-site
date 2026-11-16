@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Move off Lovable? Signs your app has outgrown it | Brolgo</title>
+<meta name="description" content="Signs your app has outgrown Lovable, what moving off Lovable really involves, and how to migrate safely without starting again. See the steps.">
+<meta property="og:title" content="Move off Lovable? Signs your app has outgrown it | Brolgo">
+<meta property="og:description" content="Signs your app has outgrown Lovable, what moving off Lovable really involves, and how to migrate safely without starting again. See the steps.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://brolgo.com.au/insights-move-off-lovable">
+<meta property="og:url" content="https://brolgo.com.au/insights-move-off-lovable">
+<meta property="og:site_name" content="Brolgo">
+<meta property="og:locale" content="en_AU">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Should you move off Lovable? 7 signs your app has outgrown it", "description": "Signs your app has outgrown Lovable, what moving off Lovable really involves, and how to migrate safely without starting again. See the steps.", "url": "https://brolgo.com.au/insights-move-off-lovable", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "inLanguage": "en-AU", "author": {"@type": "Person", "name": "Taimoor Ahmed", "url": "https://brolgo.com.au/about"}, "publisher": {"@type": "Organization", "name": "Brolgo", "logo": {"@type": "ImageObject", "url": "https://brolgo.com.au/apple-touch-icon.png"}}, "mainEntityOfPage": "https://brolgo.com.au/insights-move-off-lovable"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I export my Lovable app and host it myself?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can sync your code to GitHub and host it on standard hosting outside Lovable. The Lovable editor itself stays with Lovable, so after you move, changes are made in the code directly. Plan the backend separately, because the database, logins and files each need moving."}}, {"@type": "Question", "name": "Do I own the code Lovable writes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, you own what you create. The catch is making sure the GitHub repository sits in your own account, along with your hosting, domain and database. If a contractor set it up under their name, fix that first."}}, {"@type": "Question", "name": "Can I keep using Lovable after I move?", "acceptedAnswer": {"@type": "Answer", "text": "You can, but be careful. Lovable and your code can sync both ways, which gets messy once a developer is also working on it. Most teams pick one place to make changes and stop prompting in Lovable once the move is done."}}, {"@type": "Question", "name": "How long does it take to migrate a Lovable app?", "acceptedAnswer": {"@type": "Answer", "text": "For a typical small business app, a few weeks is common once the review is done. Apps with lots of users, payments or complex permissions take longer. The review tells you what's involved before you commit to anything."}}]}</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Brolgo home">
+      <svg class="b-mark" viewBox="28 3 58 87" aria-hidden="true">
+        <circle class="head" cx="36" cy="13" r="8.5"></circle>
+        <rect x="30" y="27" width="12" height="63" rx="6" fill="currentColor"></rect>
+        <circle cx="60" cy="66" r="18" fill="none" stroke="currentColor" stroke-width="12"></circle>
+      </svg><span>rolgo</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="siteNav" aria-label="Main">
+      <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/work">Our work</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/insights" aria-current="page">Insights</a></li>
+          <li><a href="/contact">Contact</a></li>
+      </ul>
+      <a class="btn" href="/contact">Talk to us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Launching an AI built app</p>
+      <h1>Should you move off Lovable? 7 signs your app has outgrown it</h1>
+      <p class="meta">By Taimoor Ahmed · 6 min read</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <article class="article">
+<p>Should you move off Lovable? Not always. If your app is getting real users, your fixes keep breaking other things, and you need features the AI keeps fumbling, it has probably outgrown Lovable. The good news is you rarely need to start again. Most Lovable apps can be <strong>moved off Lovable</strong> and onto your own code, hosting and database while customers keep using them.</p>
+<p>We spend a lot of our week inside Lovable apps that founders have taken as far as they can. Here are the signs we look for, what moving actually involves, and how to do it without breaking anything.</p>
+<h2>Seven signs your app has outgrown Lovable</h2>
+<p>Seeing one of these is normal. Seeing three or four usually means it's time to plan the next step.</p>
+<ol>
+<li><strong>Every fix breaks something else.</strong> You ask the AI to fix a button and the checkout stops working. Then you spend your credits fixing the fix.</li>
+<li><strong>Your credit bill keeps climbing.</strong> Most of your credits now go on going around in circles, not on building new things.</li>
+<li><strong>Real customers are relying on it.</strong> People pay you, or their data lives in your app. A bad change now costs you money and trust, not just time.</li>
+<li><strong>You need features the AI struggles with.</strong> Team accounts and roles, multiple customers on one platform, payments with refunds and invoices, complex integrations, or background jobs that run on a schedule.</li>
+<li><strong>It's getting slow.</strong> Pages that loaded instantly with a handful of test users now drag with a few hundred real ones.</li>
+<li><strong>You can't answer basic security questions.</strong> Who can see which data? Is it backed up? Where are your secret keys? If nobody knows, that's a risk.</li>
+<li><strong>A developer, investor or big customer wants to look under the hood.</strong> Due diligence, a security questionnaire or a new hire all need code that people can read, test and change safely.</li>
+</ol>
+<h2>Lovable limitations that matter in production</h2>
+<p>Lovable is great at getting an idea in front of people fast. We recommend it to plenty of founders. But the same things that make it fast can hurt once you have real users.</p>
+<ul>
+<li><strong>No automated tests.</strong> The AI changes code without a safety net, so nobody knows what a change will break until a customer finds it.</li>
+<li><strong>Structure drifts over time.</strong> After hundreds of prompts you often get duplicate components, logic copied into several places, and database tables that half overlap.</li>
+<li><strong>Security is easy to get wrong.</strong> We cover this in detail in our <a href="/insights-lovable-app-security">Lovable app security checklist</a>, but missing row level security is the big one.</li>
+<li><strong>Limited visibility.</strong> There's usually no error tracking or monitoring, so you only hear about problems from upset users.</li>
+</ul>
+<p>None of this means Lovable is bad. It means a prototype tool is being asked to do a production job.</p>
+<div class="cta-box"><p>Not sure if your app has outgrown Lovable? Our fixed price production review looks at your code, database, security and hosting and tells you exactly what to keep and what to fix. It's $990, you get a written report in 3 business days, and the fee is credited to the build if you go ahead.</p><p><a class="btn" href="/services#review-offer">Get your app reviewed</a></p></div>
+<h2>How to move off Lovable without starting again</h2>
+<p>Here's the part most founders don't expect. You own your code, and <a href="https://docs.lovable.dev/tips-tricks/deployment-hosting-ownership" target="_blank" rel="noopener">Lovable's own docs</a> explain how to keep it in your own GitHub account and host it elsewhere. So moving is usually a migration, not a rebuild. This is the order we follow:</p>
+<ol>
+<li><strong>Connect GitHub and get a copy of everything.</strong> Lovable syncs your code to a repository you own. Check it's in your account, not a freelancer's.</li>
+<li><strong>Review before you move.</strong> Read the code, map the database, list every secret key and third party service. This tells you what's solid and what needs work.</li>
+<li><strong>Fix the dangerous stuff first.</strong> Security holes, exposed keys and missing backups get fixed before anything else changes.</li>
+<li><strong>Set up proper hosting and a database you control.</strong> A Lovable app can run on standard hosting, and the backend can move to your own Supabase project.</li>
+<li><strong>Add tests and monitoring.</strong> Start with the money paths: sign up, log in, payments and anything customers rely on daily.</li>
+<li><strong>Switch over in a quiet window.</strong> Move the data, point your domain at the new hosting, and keep the old version ready to roll back.</li>
+<li><strong>Keep building.</strong> From here a developer works on the code directly. You can still use AI tools, just with tests and code review around them.</li>
+</ol>
+<h2>The mistake we see most when migrating a Lovable app</h2>
+<p>Founders often think moving the database is the whole job. It isn't. If your app uses Lovable Cloud, moving the database on its own does not bring across user logins, uploaded files, scheduled jobs or the secret keys stored in Lovable. Users can suddenly be locked out, or their files go missing.</p>
+<p>So the first thing we check is <strong>where every piece actually lives</strong>: the database, user accounts, file storage, server functions, email sending and payment webhooks. Each one needs its own plan. We also check whether the app is still syncing with Lovable. If someone keeps prompting in Lovable after the move, the two versions drift apart fast. Agree a cut off date and stick to it.</p>
+<h2>Should you stay on Lovable, refactor or rebuild?</h2>
+<p>Moving off Lovable is a big step, so be honest about where you are.</p>
+<ul>
+<li><strong>Stay on Lovable</strong> if you're still testing the idea, have only a few users and no sensitive data. Fix the security basics using our <a href="/insights-launch-checklist">launch checklist</a> and keep learning.</li>
+<li><strong>Move and refactor</strong> if people are using it and the foundations are reasonable. This is most Lovable apps we see.</li>
+<li><strong>Rebuild parts of it</strong> if the product has changed shape, for example from a tool for one business to a platform for many. We explain how to make that call in <a href="/insights-rebuild-or-refactor-mvp">rebuild or refactor your MVP</a>.</li>
+</ul>
+<p>If you're still choosing tools for your next project, our <a href="/insights-lovable-vs-bolt-vs-replit">Lovable vs Bolt vs Replit comparison</a> covers the tradeoffs.</p>
+<h2>Common questions</h2>
+<div class="faq">
+<h3>Can I export my Lovable app and host it myself?</h3>
+<p>Yes. You can sync your code to GitHub and host it on standard hosting outside Lovable. The Lovable editor itself stays with Lovable, so after you move, changes are made in the code directly. Plan the backend separately, because the database, logins and files each need moving.</p>
+<h3>Do I own the code Lovable writes?</h3>
+<p>Yes, you own what you create. The catch is making sure the GitHub repository sits in your own account, along with your hosting, domain and database. If a contractor set it up under their name, fix that first.</p>
+<h3>Can I keep using Lovable after I move?</h3>
+<p>You can, but be careful. Lovable and your code can sync both ways, which gets messy once a developer is also working on it. Most teams pick one place to make changes and stop prompting in Lovable once the move is done.</p>
+<h3>How long does it take to migrate a Lovable app?</h3>
+<p>For a typical small business app, a few weeks is common once the review is done. Apps with lots of users, payments or complex permissions take longer. The review tells you what's involved before you commit to anything.</p>
+</div>
+<h2>Your next step</h2>
+<p>If your Lovable app is starting to creak, start with a clear picture rather than a guess. Our <a href="/services#review-offer">$990 app production review</a> tells you whether to stay, move or rebuild, and what each would cost. You can also read more about how we take <a href="/services#vibe">vibe coded apps to production</a>. We're based in Brisbane, you deal with one local point of contact the whole way through, and you own your code and accounts from day one.</p>
+        <a class="back" href="/insights">← All insights</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap row">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">Let's talk</p>
+        <h2>Want a second pair of eyes?</h2>
+        <p>Tell us what you're working on and we'll give you an honest view.</p>
+      </div>
+      <a class="btn" href="/contact">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="about">
+      <a class="brand" href="/" aria-label="Brolgo home">
+      <svg class="b-mark" viewBox="28 3 58 87" aria-hidden="true">
+        <circle class="head" cx="36" cy="13" r="8.5"></circle>
+        <rect x="30" y="27" width="12" height="63" rx="6" fill="currentColor"></rect>
+        <circle cx="60" cy="66" r="18" fill="none" stroke="currentColor" stroke-width="12"></circle>
+      </svg><span>rolgo</span>
+      </a>
+      <p>Custom software for Australian businesses. We take vibe coded apps and MVPs to production, build software from scratch and help it scale.</p>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+        <li><a href="/services#vibe">Vibe coded apps to production</a></li>
+        <li><a href="/services#custom">Custom software and MVPs</a></li>
+        <li><a href="/services#automation">AI automation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="/work">Our work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://www.linkedin.com/company/brolgo" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Brolgo</span>
+      <span><a href="mailto:info@brolgo.com.au">info@brolgo.com.au</a> · <a href="tel:+61492829450">0492 829 450</a> · Brisbane, Australia</span>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
