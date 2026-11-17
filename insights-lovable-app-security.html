@@ -3,16 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Is your Lovable app secure? A plain English checklist | Brolgo</title>
-<meta name="description" content="A practical security checklist for apps built with Lovable and Supabase, written for founders, not engineers.">
-<meta property="og:title" content="Is your Lovable app secure? A plain English checklist | Brolgo">
-<meta property="og:description" content="A practical security checklist for apps built with Lovable and Supabase, written for founders, not engineers.">
+<title>Is your Lovable app secure? Plain English checklist | Brolgo</title>
+<meta name="description" content="Is your Lovable app secure? A plain English checklist for Supabase row level security, API keys, storage and logins. Check your app before launch.">
+<meta property="og:title" content="Is your Lovable app secure? Plain English checklist | Brolgo">
+<meta property="og:description" content="Is your Lovable app secure? A plain English checklist for Supabase row level security, API keys, storage and logins. Check your app before launch.">
 <meta property="og:type" content="article">
 <link rel="canonical" href="https://brolgo.com.au/insights-lovable-app-security">
 <meta property="og:url" content="https://brolgo.com.au/insights-lovable-app-security">
 <meta property="og:site_name" content="Brolgo">
 <meta property="og:locale" content="en_AU">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Is your Lovable app secure? A plain English checklist", "description": "A practical security checklist for apps built with Lovable and Supabase, written for founders, not engineers.", "url": "https://brolgo.com.au/insights-lovable-app-security", "datePublished": "2026-11-03", "dateModified": "2026-11-16", "inLanguage": "en-AU", "author": {"@type": "Person", "name": "Taimoor Ahmed", "url": "https://brolgo.com.au/about"}, "publisher": {"@type": "Organization", "name": "Brolgo", "logo": {"@type": "ImageObject", "url": "https://brolgo.com.au/apple-touch-icon.png"}}, "mainEntityOfPage": "https://brolgo.com.au/insights-lovable-app-security"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Is your Lovable app secure? A plain English checklist", "description": "Is your Lovable app secure? A plain English checklist for Supabase row level security, API keys, storage and logins. Check your app before launch.", "url": "https://brolgo.com.au/insights-lovable-app-security", "datePublished": "2026-11-03", "dateModified": "2026-11-17", "inLanguage": "en-AU", "author": {"@type": "Person", "name": "Taimoor Ahmed", "url": "https://brolgo.com.au/about"}, "publisher": {"@type": "Organization", "name": "Brolgo", "logo": {"@type": "ImageObject", "url": "https://brolgo.com.au/apple-touch-icon.png"}}, "mainEntityOfPage": "https://brolgo.com.au/insights-lovable-app-security"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Lovable secure?", "acceptedAnswer": {"@type": "Answer", "text": "Lovable itself is a solid platform, but the apps it generates are only as secure as their database rules and settings. Most problems we see come from row level security being off or too loose, or secret keys ending up in the browser."}}, {"@type": "Question", "name": "What is row level security in Supabase?", "acceptedAnswer": {"@type": "Answer", "text": "It's the set of rules that decides which rows in each database table a user can see or change. With it switched on and set up properly, users only see their own data. Without it, anyone logged in may be able to read everything."}}, {"@type": "Question", "name": "Do I need to worry about Australian privacy law for my app?", "acceptedAnswer": {"@type": "Answer", "text": "If you collect personal information, yes. You're expected to protect it, and serious breaches may need to be reported. Locking down your database and storage is the first step."}}]}</script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,6 +72,7 @@
 <p>Keys for OpenAI, Stripe, email services and similar should live in server side functions, not in the code that runs in the browser. If a prompt asked the AI to "just call the API", check where it put the key.</p>
 <h2>4. Check every page and action, not just the login screen</h2>
 <p>Hiding an admin button doesn't stop someone calling the action behind it. Make sure the database rules and server functions check who the user is and what role they have, every time.</p>
+<div class="cta-box"><p>Not sure your database rules and keys are locked down? Our $990 production review checks all of this and gives you a written report, ranked by risk, in 3 business days.</p><p><a class="btn" href="/services#review-offer">Book a $990 production review</a></p></div>
 <h2>5. Lock down file storage</h2>
 <p>If users upload documents or photos, check your storage buckets. Public buckets mean anyone with the link can see the file. Anything personal, like IDs, invoices or medical documents, should be private.</p>
 <h2>6. Tighten up sign up and passwords</h2>
@@ -80,6 +82,15 @@
 <h2>8. Back it up and watch it</h2>
 <p>Set up regular backups and test a restore. Add error tracking so you know when something breaks. If you handle personal information, remember <a href="https://www.oaic.gov.au/privacy/notifiable-data-breaches/about-the-notifiable-data-breaches-scheme" target="_blank" rel="noopener">Australian privacy law</a> expects you to protect it and to act if there's a breach.</p>
 <h2>Not sure where you stand?</h2>
+<h2>Common questions</h2>
+<div class="faq">
+<h3>Is Lovable secure?</h3>
+<p>Lovable itself is a solid platform, but the apps it generates are only as secure as their database rules and settings. Most problems we see come from row level security being off or too loose, or secret keys ending up in the browser.</p>
+<h3>What is row level security in Supabase?</h3>
+<p>It's the set of rules that decides which rows in each database table a user can see or change. With it switched on and set up properly, users only see their own data. Without it, anyone logged in may be able to read everything.</p>
+<h3>Do I need to worry about Australian privacy law for my app?</h3>
+<p>If you collect personal information, yes. You're expected to protect it, and serious breaches may need to be reported. Locking down your database and storage is the first step.</p>
+</div>
 <p>Working through this list yourself is a great start. If you'd rather have someone check it properly, our <a href="/services#review-offer">$990 app production review</a> covers all of this plus hosting, performance and code quality, with a written report ranked by risk. Also see <a href="/insights-launch-checklist">7 things to fix before you launch</a>. And if security is just one of several headaches, read <a href="/insights-move-off-lovable">the signs your app has outgrown Lovable</a>.</p>
         <a class="back" href="/insights">← All insights</a>
       </article>
