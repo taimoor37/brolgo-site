@@ -23,6 +23,18 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // XMAS-START: Christmas offer, ends end of 27 Dec 2026 Brisbane time. Auto hides after that.
+  (function () {
+    var live = Date.now() < Date.parse('2026-12-28T00:00:00+10:00');
+    [].forEach.call(document.querySelectorAll('[data-xmas]'), function (el) { if (!live) el.remove(); });
+    [].forEach.call(document.querySelectorAll('[data-regular]'), function (el) { if (live) el.remove(); });
+    if (!live) {
+      var o = document.querySelector('#service option[value="review"]');
+      if (o) o.textContent = 'App production review ($990)';
+    }
+  })();
+  // XMAS-END
+
   // Footer year
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
