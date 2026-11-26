@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://brolgo.com.au/about</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://brolgo.com.au/about</loc><lastmod>2026-11-26</lastmod><priority>0.7</priority></url>
   <url><loc>https://brolgo.com.au/contact</loc><lastmod>2026-11-03</lastmod><priority>0.7</priority></url>
   <url><loc>https://brolgo.com.au/</loc><lastmod>2026-11-03</lastmod><priority>1.0</priority></url>
   <url><loc>https://brolgo.com.au/insights-ai-automation-examples</loc><lastmod>2026-11-17</lastmod><priority>0.7</priority></url>
@@ -11,10 +11,13 @@
   <url><loc>https://brolgo.com.au/insights-spreadsheet-to-software</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://brolgo.com.au/insights-what-to-automate</loc><lastmod>2026-11-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://brolgo.com.au/insights</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
-  <url><loc>https://brolgo.com.au/services</loc><lastmod>2026-11-03</lastmod><priority>0.9</priority></url>
+  <url><loc>https://brolgo.com.au/services</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
   <url><loc>https://brolgo.com.au/work</loc><lastmod>2026-11-03</lastmod><priority>0.9</priority></url>
   <url><loc>https://brolgo.com.au/insights-rebuild-or-refactor-mvp</loc><lastmod>2026-11-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://brolgo.com.au/insights-choosing-software-developer-brisbane</loc><lastmod>2026-11-17</lastmod><priority>0.7</priority></url>
   <url><loc>https://brolgo.com.au/insights-move-off-lovable</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://brolgo.com.au/insights-no-code-to-custom-code</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://brolgo.com.au/custom-software-brisbane</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
+  <url><loc>https://brolgo.com.au/mvp-development-brisbane</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
+  <url><loc>https://brolgo.com.au/lovable-developer-australia</loc><lastmod>2026-11-26</lastmod><priority>0.9</priority></url>
 </urlset>
