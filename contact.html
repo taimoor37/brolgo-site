@@ -61,9 +61,12 @@
 
   <section style="border-top:0;padding-top:0">
     <div class="wrap contact-grid">
-      <form class="card" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="company-website">
-        <input type="hidden" name="form-name" value="contact">
-        <p class="hp"><label for="company-website">Leave this empty</label><input id="company-website" name="company-website" tabindex="-1" autocomplete="off"></p>
+      <form class="card" name="contact" method="POST" action="https://api.web3forms.com/submit">
+        <input type="hidden" name="access_key" value="ccf9657b-95f7-4689-bfa9-3abbb3e89e76">
+        <input type="hidden" name="subject" value="New enquiry from brolgo.com.au">
+        <input type="hidden" name="from_name" value="Brolgo website">
+        <input type="hidden" name="redirect" value="https://brolgo.com.au/thanks">
+        <p class="hp"><label for="botcheck">Leave this empty</label><input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off"></p>
         <div class="field-row">
           <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
           <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
